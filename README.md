@@ -115,3 +115,33 @@ I don't like to write in-house code for generic functionality, better use extern
 
 Each time tiny url request reaches service’s backend. We can push this data(tiny url, users etc.) to a temporary storage and periodically send this data to external third-party analytics providers.
 
+## Estimates
+### Development - 18 days
+*	1d - Initial project setup (Web Framework and Database)
+*	4h - DO (Database Object)
+*	4h - DAO Layer (Databaase Access Layer)
+*	3d - Shortening Services
+*	2d - Cache Service
+*	2d - Routing API
+*	2d - Analytics API
+*	3d - Error Handling
+*	4d - Scale up (load balancer, DB Shard)
+### Write unit tests
+*	6 days - 30% of development
+### Functional Testing and Bug fixes
+*	9 days - 50% of development
+### Load Testing
+*	3 days
+### Deployment
+*	3 days
+### Buffer Time
+*	8 days - 20% of overall project
+### Go Live Date
+* Total working days - 47 days
+* Holidays - 2 days
+* Meetings - 1 day
+* Estimated day go live date - 50 days /(5 days a week) weeks from now.
+
+10 weeks for a single contributor
+
+

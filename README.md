@@ -43,6 +43,8 @@ To ensure system is scalable both data and traffic; and high availability:
 2. Sharded the database to handle huge object data
 3. Added cache system to reduce load on the database.
 
+![Scalable High Level Design](https://raw.githubusercontent.com/vikas-patel/LinkShortner/main/Link%20Shortner.png)
+
 ## Database?
 RDBMS could be good choice but it will have problems when database size and traffic grows, altough we can shard but this would increase the complexity of design.
 I would personally prefer NoSQL database. Although they are eventually consistent but easy to scale.

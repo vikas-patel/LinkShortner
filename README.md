@@ -88,9 +88,9 @@ What is the minimum length of the shortened URL to represent 36M URLs? We will u
 1. Join the original key and customer_id and then hash it, so generated short url will unique for each customer.
 We can compute it using the Unique Hash(MD5, SHA256, etc.) and then encode using base62. If we use the MD5 algorithm as our hash function, it’ll produce a 128-bit hash value. After base62 encoding, we’ll get a string having more than four characters. We can take the first 4 characters for the key.
 
-2. The first 7 characters could be the same for different long URLs so check the DB to verify that TinyURL is not used already
+2. The first 4 characters could be the same for different long URLs so check the DB to verify that TinyURL is not used already
 
-3. Try next 7 characters of previous choice of 7 characters already exist in DB and continue until you find a unique value
+3. Try next 4 characters of previous choice of 4 characters already exist in DB and continue until you find a unique value
 
 ## DB Scale
 * MongoDB supports distributing data across multiple machines using shards. Since we have to support large data sets and high throughput, we can leverage sharding feature of MongoDB.
@@ -143,5 +143,3 @@ Each time tiny url request reaches service’s backend. We can push this data(ti
 * Estimated day go live date - 50 days /(5 days a week) weeks from now.
 
 10 weeks for a single contributor
-
-
